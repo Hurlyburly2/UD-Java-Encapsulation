@@ -21,5 +21,11 @@ public class Main {
 
         EnhancedPlayer player = new EnhancedPlayer("Doug", 50, "Sword");
         System.out.println("Initial health is: " + player.getHealth());
+
+        Printer normalPrinter = new Printer(false);
+        Printer duplexPrinter = new Printer(true);
+
+        normalPrinter.printPages(5);
+        duplexPrinter.printPages(5);
     }
 }
